@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----------Important meta tags----------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Newbie Frontend Mentor Challenge to build a product review card">
+    <meta property="og:description" content="Newbie Frontend Mentor Challenge to build a product review card">
+    <meta name="author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:image" content="https://github.com/ogunsanwodavid/FYLO/assets/images/favicon-32x32.png">
+    <meta property="og:title" content="Product Preview Card">
+
+    <!-----------Title---------->
+    <title>Product Preview Card</title>
+
+    <!------------Favicon------------->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-------Linked stylesheets, fonts, icons and libraries------------>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!----------Fontawesome icons---------->
+
+    
+    <!--------Google Fonts----------->
+    
+
+    <!--Added Styles-->
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+            url('./assets/fonts/Montserrat/OFL.txt') format('woff')
+        }
+
+        @font-face {
+            font-family: 'Fraunces';
+            src: url('./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype'),
+            url('./assets/fonts/Fraunces/OFL.txt') format('woff')
+        }
+
+        button , a{
+            cursor: pointer;
+        }
+
+        header{
+            background-image: url('./assets/images/image-product-mobile.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (min-width:900px) {
+            header{
+                background-image: url('./assets/images/image-product-desktop.jpg');
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-cream md:flex md:items-center md:justify-center">
+    <!--General Container-->
+    <div class="w-full px-4 py-12 md:w-[670px] md:h-[570px] md:flex md:flex-row">
+        <!--Header-->
+        <header class="w-full rounded-t-xl h-[250px] md:w-1/2 md:h-full md:rounded-tr-none md:rounded-l-2xl">
+        </header>
+
+        <!--Main Content-->
+        <main class="bg-white w-full px-4 py-6 rounded-b-xl md:w-1/2 md:rounded-bl-none md:rounded-r-2xl md:p-8">
+            <h2 class="font-montserrat text-base text-dark-grayish-blue font-[500]" style="letter-spacing: 0.2rem;">PERFUME</h2>
+
+            <h1 class="font-fraunces text-3xl text-very-dark-blue font-[700] mt-2">Gabrielle Essence Eau De Parfum</h1>
+
+            <p class="font-montserrat text-base text-dark-grayish-blue font-[500] mt-4"> A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+            <!-- Prices section -->
+            <section class="flex items-center space-x-4 mt-5">
+                <div class="text-4xl font-fraunces font-[700] text-dark-cyan">$149.99</div>
+                <div class="text-lg line-through font-montserrat font-[500] text-dark-grayish-blue">$169.99</div>
+            </section>
+
+            <!--Add to cart button-->
+            <div class="w-full flex items-center justify-center space-x-4 bg-dark-cyan p-4 rounded-lg mt-5 hover:bg-very-dark-blue cursor-pointer">
+                <img src="./assets/images/icon-cart.svg" alt="" class="h-5">
+
+                <p class="text-white font-montserrat font-[700]">Add to Cart</p>
+            </div>
+        </main>
+    </div>
+</body>
